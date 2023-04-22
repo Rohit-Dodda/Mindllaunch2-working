@@ -1,0 +1,516 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color-scheme: dark;
+  scroll-behavior: smooth;
+  transition-timing-function: ease-in-out;
+  font-family: "Poppins", sans-serif;
+  height: fit-content;
+}
+
+body {
+  background: #0b0b09;
+}
+
+::selection {
+  background-color: orangered;
+}
+
+::-webkit-scrollbar {
+  background-color: radial-gradient(at right top, rgb(185, 28, 28), rgb(220, 38, 38), rgb(234, 88, 12));
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #551717; /* Set the scrollbar thumb color to black */
+  border-radius: 10px; /* Add some border radius to the thumb */
+}
+
+.hover\:rotate-360:hover {
+  transform: rotate(360deg);
+}
+
+.features-img {
+  filter: drop-shadow(-5px -2px 49px #281212);
+}
+
+.features-img:hover {
+  filter: drop-shadow(-5px -2px 49px #514444);
+}
+
+.features-img-l {
+  filter: drop-shadow(-2px -2px 49px #361802);
+}
+
+.features-img-l:hover {
+  filter: drop-shadow(-5px -2px 49px #514444);
+}
+
+.features-img-2 {
+  filter: drop-shadow(-2px -2px 49px #4f4801);
+
+}
+
+.features-img-2:hover {
+  filter: drop-shadow(-5px -2px 49px #514444);
+}
+
+/* Text Gradients */
+.navbar-mindlaunch-grad {
+  background: linear-gradient(to right, rgb(239, 68, 68), rgb(122, 31, 31));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+  animation: move-gradient 3s infinite linear;
+  text-shadow: 1px 4px 20px rgba(197, 33, 33, 0.75);
+}
+
+.analytics-glass {
+  background: rgba(82, 4, 4, 0.683);
+box-shadow: 0 8px 32px 0 rgba(84, 46, 3, 0.37);
+backdrop-filter: blur( 13px );
+-webkit-backdrop-filter: blur( 13px );
+border-radius: 10px;
+}
+
+.ideas-gradient-hero {
+  background: linear-gradient(to top, #f12711, #f5af19);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+  animation: move-gradient 2s infinite linear;
+}
+
+.mind-launch-gradient-hero {
+  background: linear-gradient(to left, #e52d27, #b31217);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+  animation: move-gradient 5s infinite linear;
+  text-shadow: 4px 8px 29px rgba(202,34,17,1);
+}
+
+.mind-launch-hero-text {
+  background: linear-gradient(to left, #fe8c00, #b31217);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+  animation: move-gradient 5s infinite linear;
+  text-shadow: 4px 8px 29px rgba(202,34,17,1);
+}
+
+.ideas-hero-text {
+  background: linear-gradient(to left, #333333, #dd1818);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+  animation: move-gradient 5s infinite linear;
+  text-shadow: 4px 8px 29px rgb(96, 26, 18);
+}
+
+.collaborating-hero-text {
+  background: linear-gradient(to left, #ED213A, #93291E);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+  animation: move-gradient 5s infinite linear;
+  text-shadow: 4px 8px 29px rgb(96, 26, 18);
+}
+
+.power-hero-text {
+  background: linear-gradient(to left, #F00000, #DC281E);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+  animation: move-gradient 5s infinite linear;
+  text-shadow: 4px 8px 29px rgb(96, 26, 18);
+}
+
+.ideation-hero-text {
+  background: linear-gradient(to left, #e43a15, #e65245);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+  animation: move-gradient 5s infinite linear;
+  text-shadow: 4px 8px 29px rgb(96, 26, 18);
+}
+
+.like-minded-hero-text {
+  background: linear-gradient(to left, #e43a15, #e65245);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+  animation: move-gradient 5s infinite linear;
+  text-shadow: 4px 8px 29px rgb(96, 26, 18);
+}
+
+.ultimate-hero-text {
+  background: linear-gradient(to left, #c21500, #ffc500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+  animation: move-gradient 5s infinite linear;
+  text-shadow: 4px 8px 29px rgb(96, 26, 18);
+}
+
+.connect-grad {
+  background: linear-gradient(to left, #c21500, #fcc511);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+  animation: move-gradient 5s infinite linear;
+  text-shadow: 4px 8px 29px rgb(96, 26, 18);
+
+}
+
+.businesses-grad {
+  background: linear-gradient(to left, #c21500, #ff0000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+  animation: move-gradient 5s infinite linear;
+  text-shadow: 4px 8px 29px rgb(96, 26, 18);
+
+}
+
+.interests-grad {
+  background: linear-gradient(to left, #c21500, #df5a08);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+  animation: move-gradient 5s infinite linear;
+  text-shadow: 4px 8px 29px rgb(96, 26, 18);
+
+}
+
+.collaborations-grad {
+  background: linear-gradient(to left, #c21500, #ae1111);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+  animation: move-gradient 5s infinite linear;
+  text-shadow: 4px 8px 29px rgb(96, 26, 18);
+
+}
+
+.reality-grad {
+  background: linear-gradient(to left, #c21500, #e90909);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+  animation: move-gradient 5s infinite linear;
+  text-shadow: 4px 8px 29px rgb(96, 26, 18);
+
+}
+
+.connecting-hero-text {
+  background: linear-gradient(to left, #a73737, #7a2828);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+  animation: move-gradient 5s infinite linear;
+  text-shadow: 4px 8px 29px rgb(96, 26, 18);
+}
+
+.hero-side-text {
+  text-shadow: 4px 8px 29px rgb(215, 27, 7);
+  animation: move-gradient 5s infinite linear;
+}
+
+.get-started-btn {
+  animation: move-gradient 5s infinite linear;
+  -webkit-box-shadow: -4px 6px 95px 0px rgba(214,74,23,0.86);
+  -moz-box-shadow: -4px 6px 95px 0px rgba(214,74,23,0.86);
+  box-shadow: -4px 6px 95px 0px rgba(214,74,23,0.86);
+}
+
+.get-started-btn:hover {
+  box-shadow: -4px 6px 95px 0px rgba(220, 8, 8, 0.86);
+}
+
+.features-text-heading-l {
+  background: linear-gradient(to right, rgb(234, 88, 12), rgb(249, 115, 22));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+  animation: move-gradient 5s infinite linear;
+  text-shadow: 4px 8px 29px rgb(96, 26, 18);
+}
+
+.selling-features-text {
+  background: linear-gradient(to right, rgb(189, 16, 16), rgb(207, 12, 12));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+  animation: move-gradient 5s infinite linear;
+  text-shadow: 4px 8px 29px rgb(96, 26, 18);
+}
+
+.selling-tools-text {
+  background: linear-gradient(to right, rgb(228, 221, 9), rgb(177, 154, 4));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+  animation: move-gradient 5s infinite linear;
+  text-shadow: 4px 8px 29px rgb(108, 94, 14);
+}
+
+.footer-bg {
+  background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #1e0404, #2f0303); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+/* Mesh Hero */
+.hero-mesh {
+  position: absolute;
+  width: 300px;
+  height: 438px;
+  top: 0px;
+  right: 0px;
+  background: #de640d;
+  filter: blur(190px);
+}
+
+.hero-mesh-l {
+  position: absolute;
+  width: 400px;
+  height: 538px;
+  top: 0px;
+  right: 0px;
+  background: #e70d0d;
+  filter: blur(250px);
+}
+
+
+
+
+
+/* Background glassmorphism effect */
+
+.navbar-glass {
+background: rgba(161, 13, 13, 0.25);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(4.4px);
+-webkit-backdrop-filter: blur(4.4px);
+}
+
+/* Loader */
+.loader {
+  width: 32px;
+  height: 90px;
+  display: block;
+  margin: 20px auto;
+  position: relative;
+  border-radius: 50% 50% 0 0;
+  border-bottom: 10px solid #ff3d00;
+  background-color: #fff;
+  background-image: radial-gradient(
+      ellipse at center,
+      #fff 34%,
+      #ff3d00 35%,
+      #ff3d00 54%,
+      #fff 55%
+    ),
+    linear-gradient(#ff3d00 10px, transparent 0);
+  background-size: 28px 28px;
+  background-position: center 20px, center 2px;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  animation: animloaderBack 1s linear infinite alternate;
+}
+
+.loader::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 64px;
+  height: 44px;
+  border-radius: 50%;
+  box-shadow: 0px 15px #ff3d00 inset;
+  top: 67px;
+}
+
+.loader::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 34px;
+  height: 34px;
+  top: 112%;
+  background: radial-gradient(
+    ellipse at center,
+    #ffdf00 8%,
+    rgba(249, 62, 0, 0.6) 24%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  border-radius: 50% 50% 0;
+  background-repeat: no-repeat;
+  background-position: -44px -44px;
+  background-size: 100px 100px;
+  box-shadow: 4px 4px 12px 0px rgba(255, 61, 0, 0.5);
+  box-sizing: border-box;
+  animation: animloader 1s linear infinite alternate;
+}
+
+@keyframes animloaderBack {
+  0%,
+  30%,
+  70% {
+    transform: translateY(0px);
+  }
+  20%,
+  40%,
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes animloader {
+  0% {
+    box-shadow: 4px 4px 12px 2px rgba(255, 61, 0, 0.75);
+    width: 34px;
+    height: 34px;
+    background-position: -44px -44px;
+    background-size: 100px 100px;
+  }
+  100% {
+    box-shadow: 2px 2px 8px 0px rgba(255, 61, 0, 0.5);
+    width: 30px;
+    height: 28px;
+    background-position: -36px -36px;
+    background-size: 80px 80px;
+  }
+}
+
+/* Rocket Hero Loader */
+
+.rocketloader {
+  width: 32px;
+  height: 90px;
+  display: block;
+  margin: 20px auto;
+  position: relative;
+  border-radius: 50% 50% 0 0;
+  border-bottom: 10px solid #ff3d00;
+  background-color: #fff;
+  background-image: radial-gradient(
+      ellipse at center,
+      #fff 34%,
+      #ff3d00 35%,
+      #ff3d00 54%,
+      #fff 55%
+    ),
+    linear-gradient(#ff3d00 10px, transparent 0);
+  background-size: 28px 28px;
+  background-position: center 20px, center 2px;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  animation: animloaderBackRocket  steps(19, end) 9s;
+  animation-duration: 1.9s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; 
+  }
+
+.rocketloader::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 64px;
+  height: 44px;
+  border-radius: 50%;
+  box-shadow: 0px 15px #ff3d00 inset;
+  top: 67px;
+}
+
+.rocketloader::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 34px;
+  height: 34px;
+  top: 112%;
+  background: radial-gradient(
+    ellipse at center,
+    #ffdf00 8%,
+    rgba(249, 62, 0, 0.6) 24%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  border-radius: 50% 50% 0;
+  background-repeat: no-repeat;
+  background-position: -44px -44px;
+  background-size: 100px 100px;
+  box-shadow: 4px 4px 12px 0px rgba(255, 61, 0, 0.5);
+  box-sizing: border-box;
+  animation: animloaderRocket 15s infinite linear alternate;
+}
+
+@keyframes animloaderBackRocket {
+  0%, 30%, 70% {
+    transform: translateY(0px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(-600px);
+  }
+}
+
+@keyframes animloaderRocket {
+  0% {
+    box-shadow: 4px 4px 12px 2px rgba(255, 61, 0, 0.75);
+    width: 34px;
+    height: 34px;
+    background-position: -44px -44px;
+    background-size: 100px 100px;
+  }
+  100% {
+    box-shadow: 2px 2px 8px 0px rgba(255, 61, 0, 0.5);
+    width: 30px;
+    height: 28px;
+    background-position: -36px -36px;
+    background-size: 80px 80px;
+  }
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes move-gradient {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+
