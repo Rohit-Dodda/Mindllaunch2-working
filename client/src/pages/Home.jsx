@@ -1,33 +1,29 @@
 import Navbar from "@/home/Navbar"
 import Hero from "@/home/Hero"
-import Features from "@/home/Features"
-import BottomStarted from "@/home/BottomStarted"
-import Footer from "@/home/Footer"
-import Analytics from "@/home/Analytics"
+import FeaturesOne from "@/home/FeaturesOne"
+import FeaturesTwo from "@/home/FeaturesTwo"
+import FeaturesThree from "@/home/FeaturesThree"
 import Contact from "@/home/Contact"
+import Newsletter from "@/home/Newsletter"
 
 const Home = () => {
   return (
-   <>
-    <Navbar />
-    <div className="mt-64">
-    <Hero className='bg-transparent' />
-    <div className="mt-32">
-      <div id="features-section">
-    <Features />
+    <div>
+      <Navbar />
+      <div className='mt-[70px]'>
+        <Hero />
+      </div>
+      <div className='mt-[160px]'>
+        <FeaturesOne />
+        {/* <FeaturesTwo />
+        <FeaturesThree /> */}
+        <Newsletter />
+      </div>
+        <div className='mt-[240px] '>
+          <Contact />
+        </div>
     </div>
-    <div id="analytics">
-      <Analytics />
-    </div>
-       <BottomStarted />
-    <div id="contact-section">
-       <Contact />
-    </div>
-    <Footer />
-    </div>
-    </div>
-   </>
-  )
+  );
 }
 
 export default Home
